@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <title>SHY-UI-M</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+        if(document.body.clientWidth < 500 || window.screen.width < 500){
+          // 插入 meta 标签
+          var oMeta = document.createElement('meta');
+          oMeta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=0';
+          oMeta.name = 'viewport';
+          document.getElementsByTagName('head')[0].appendChild(oMeta);
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+/* 此文件为该项目demo展示用的样式文件，不会输出到使用该UI库的其他项目中 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Microsoft Yahei", "Helvetica", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  height: 100%;
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+pre,
+span,
+ul,
+li,
+a,
+strong,
+i,
+code {
+  font-family: "Microsoft Yahei", "Helvetica", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #888;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: rgba(179, 181, 183, 1)
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #FBF9F7;
+}
+
+::-webkit-scrollbar-button:vertical:decremen,
+::-webkit-scrollbar-button:vertical:end:decrement,
+::-webkit-scrollbar-button:vertical:increment,
+::-webkit-scrollbar-button:vertical:start:increment {
+  display: none
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #ddd;
+  border-radius: 4px
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #bbb
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1257740 */
+  src: url('//at.alicdn.com/t/font_1257740_5rczbanuibc.eot');
+  src: url('//at.alicdn.com/t/font_1257740_5rczbanuibc.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1257740_5rczbanuibc.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1257740_5rczbanuibc.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1257740_5rczbanuibc.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1257740_5rczbanuibc.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.preview-unit {
+  margin: 20px 0;
+
+  a {
+    color: #3789f5;
+    font-size: 13px;
+  }
+
+  .tips {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px 0 5px;
+  }
+
+  .code-toggle {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+
+  .code {
+    display: none;
+    background-color: #e1e3e4;
+    padding: 20px;
+    color: #2686ff;
+    font-size: 14px;
+    border-radius: 6px;
+    overflow: auto;
+  }
+
+  strong {
+    font-weight: bold;
+    color: #222;
+  }
+}
+
+.preview-title {
+  color: #222;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.api-table {
+  width: 100%;
+
+  thead tr {
+    height: 40px;
+    color: #666;
+    line-height: 32px;
+    background-color: #e1e3e4;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  tbody tr {
+    height: 40px;
+    color: #666;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+
+    td {
+      min-width: 60px;
+    }
+
+    td:first-child {
+      color: rgb(99, 172, 214);
+      font-size: 14px;
+    }
+  }
+
+  tr th:first-child,
+  tr td:first-child {
+    padding-left: 10px;
+  }
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.page-title {
+  margin: 0 0 30px;
+  color: #333;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 30px;
+  cursor: default;
+}
+
+.white-block {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 12px #ebedf0;
+
+  h4{
+    color: #666;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  code{
+    position: relative;
+    display: block;
+    overflow-x: auto;
+    color: #455a64;
+    font-size: 13px;
+    font-family: 'Source Code Pro', 'Monaco', 'Inconsolata', monospace;
+    line-height: 24px;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  p,span{
+    font-weight: 500;
+  }
+  .hljs-comment{
+    color: #999;
+  }
+
+  .tips {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 5px 0 5px;
+  }
+
+  .code-toggle {
+    color: #991200;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 5px;
+    cursor: pointer;
+  }
+
+  .code {
+    display: block;
+    background-color: #efefef;
+    padding: 20px;
+    color: #2686ff;
+    font-size: 14px;
+    border-radius: 6px;
+    overflow: auto;
+    line-height: 24px;
+  }
+
+  strong {
+    font-weight: bold;
+    color: #222;
+  }
+}
+
+.label{
+  display: block;
+  margin: 10px 15px;
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+}
+
+.label-text{
+  background-color: #fff2f1;
+  font-style: normal;
+}

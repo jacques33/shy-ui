@@ -1,0 +1,16 @@
+image:
+  name: registry.cn-hangzhou.aliyuncs.com/gugud/docker-frontend-shydemo:latest
+  entrypoint: ["/bin/sh", "-c"]
+
+
+stages:
+  - deploy
+release_job:
+  stage: deploy
+  only:
+    - demo
+  tags:
+    - aliyun-k8s-demo-runner
+  script:
+    - ssh -o StrictHostKeyChecking=no root@172.17.73.175 "sh /files/data/update.sh shy_ui"
+    - echo "game over"
