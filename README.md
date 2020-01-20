@@ -1,11 +1,14 @@
-# SHY-UI-M
+# shy-ui-m 
 
-### npm安装
+基于Vue的**移动端**UI组件库 :iphone:
+
+
+#### 1. npm安装
 ```
 npm install shy-ui-m 
 ```
 
-### main.js引入
+#### 2. main.js引入
 ```
 import Vue from 'vue'
 import Shy from 'shy-ui-m'
@@ -16,9 +19,10 @@ import 'shy-ui-m/lib/shy-ui.css'
 Vue.use(Shy)
 
 // 将部分组件注册为全局方法
-Vue.prototype.$toast = Shy.ShyToast;
-Vue.prototype.$dialog = Shy.ShyDialog;
+Vue.prototype.$toast = Shy.ShyToast
+Vue.prototype.$dialog = Shy.ShyDialog
+Vue.prototype.$loading = Shy.ShyLoading
 ```
 
-### 在线演示Demo
-[在线演示地址](https://shyui-demo.zlzgy.org.cn).
+#### 3. 在线文档和实例
+[在线地址](https://shyui-demo.zlzgy.org.cn)

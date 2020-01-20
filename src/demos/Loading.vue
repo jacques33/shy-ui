@@ -56,7 +56,7 @@ export default {
                 "import Vue from 'vue'\n" +
                 "import { Shy } from 'shy-ui'\n\n" +
                 "Vue.use(Shy)\n" +
-                "Vue.prototype.$loading = Shy.Loading",
+                "Vue.prototype.$loading = Shy.ShyLoading",
 
                 '//显示loading\nthis.$loading.show();' +
                 '\n\n//显示带字符串loading\nthis.$loading.show({text:"加载中"});'+
