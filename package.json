@@ -3,7 +3,11 @@
   "version": "0.3.3",
   "description": "基于VUE的移动端UI组件库",
   "main": "lib/shy-ui.umd.min.js",
-  "keywords": ["VUE","mobile","UI components"],
+  "keywords": [
+    "VUE",
+    "mobile",
+    "UI components"
+  ],
   "private": false,
   "author": {
     "name": "jacques1112"
